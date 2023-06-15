@@ -1,0 +1,222 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock title %} {% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background:rgb(86,85,85); border-radius: 33px;">
+                <img src="/static/img/2.jfif" class="d-block w-100 h-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color:black">Welcome to the best Ice cream of Chemnitz</h5>
+                    <p style="color:black">I know you eat ice cream but you haven't tried my ice cream</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/img/4.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color:black">We serve love with ice cream</h5>
+                    <p style="color:black">Best ice cream corner in city</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/img/6.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color:black">Inaugrated by Mr. Pitbull</h5>
+                    <p style="color:black">This ice cream was inaugrated by Mr. Pitbullah Khan</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    </div>
+</div>
+
+
+
+
+
+<div class="container my-3">
+    <h1 class="my-4 text-center">Select from our range of Ice Creams</h1>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/caramel ice.jpg" class="d-block w-100 image" alt="...">
+
+
+                <div class="card-body">
+                    <p class="card-text"><b>Caramel ice cream</b> is a delightful treat that combines the richness of creamy ice cream with the luscious sweetness of caramel. Its smooth texture and caramel swirls create a perfect harmony of flavors that is sure to satisfy
+                        any dessert lover's cravings.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button onclick="alert('The Price of Caramel Ice Cream is €2.5.')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/img/choclate ice.jpg" class="d-block w-100 image" alt="...">
+
+                <div class="card-body">
+                    <p class="card-text">Indulge in the decadent allure of <b>chocolate ice cream</b>, where velvety richness intertwines with bittersweet bliss, captivating your taste buds with irresistible delight. Its smooth, chocolatey decadence creates a symphony of
+                        flavors that evoke pure bliss and leave a lingering cocoa-infused enchantment.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button onclick="alert('The Price of Chocolate Ice Cream is €1.5')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card shadow-sm ">
+                <img src="/static/img/cookies.jpg " class="d-block w-100 image " alt="... ">
+
+                <div class="card-body ">
+                    <p class="card-text "><b>Cookies ice cream</b> savor the delightful fusion of cookies and ice cream, where crumbly goodness melds with creamy indulgence, offering a heavenly combination that satisfies your dessert cravings.</p>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <button onclick="alert('The Price of Cookies Ice Cream is €4.0')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col ">
+            <div class="card shadow-sm ">
+                <img src="/static/img/lavender honey ice.jpg " class="d-block w-100 image " alt="... ">
+
+                <div class="card-body ">
+                    <p class="card-text ">
+                        Discover the enchanting allure of <b>lavender honey ice cream</b>, where delicate floral notes mingle with the golden sweetness of honey, creating a captivating taste experience. Its velvety texture and unique flavor combination
+                        offer a delightful indulgence.</p>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <button onclick="alert('The Price of Lavender Honey Ice Cream is €2.5')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card shadow-sm ">
+                <img src="/static/img/mango ice.jpg " class="d-block w-100 image " alt="... ">
+
+                <div class="card-body ">
+                    <p class="card-text ">Immerse yourself in the tropical paradise of <b>mango ice cream</b>, where juicy mangoes blend with creamy delight, delivering a burst of refreshing flavors that evoke sunny bliss.</p>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <button onclick="alert('The Price of Mango Ice Cream is €5.5')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card shadow-sm ">
+                <img src="/static/img/peach ice.jpg " class="d-block w-100 image " alt="... ">
+
+                <div class="card-body ">
+                    <p class="card-text "><b>Peach ice cream, </b>Delight in the juicy allure of peach ice cream, where succulent peaches meld with creamy bliss, creating a harmonious fusion of flavors that captivates your taste buds. Its luscious texture and vibrant peachy
+                        essence offer a refreshing escape.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <button onclick="alert('The Price of Peach Ice Cream is €5.5')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col ">
+            <div class="card shadow-sm ">
+                <img src="/static/img/venilla ice.jpg " class="d-block w-100 image " alt="... ">
+
+                <div class="card-body ">
+                    <p class="card-text ">Experience the timeless elegance of <b>vanilla ice cream</b>, where creamy richness intertwines with subtle sweetness, delivering a classic flavor that never fails to enchant. Its smooth and velvety texture creates a luxurious indulgence,
+                        leaving a comforting.</p>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <button onclick="alert('The Price of Vanilla Ice Cream is €5.5')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card shadow-sm ">
+                <img src="/static/img/watermelon ice.jpg " class="d-block w-100 image " alt="... ">
+
+                <div class="card-body ">
+                    <p class="card-text ">Delight in the refreshing essence of <b>watermelon ice cream</b>, where juicy sweetness merges with cool indulgence, offering a delightful taste that captures the essence of summer. Its vibrant flavor and smooth texture create a delightful
+                        treat.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <button onclick="alert('The Price of Watermelon Ice Cream is €1.5')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card shadow-sm ">
+                <img src="/static/img/raspberry ice.jpg " class="d-block w-100 image " alt="... ">
+
+                <div class="card-body ">
+                    <p class="card-text ">Indulge in the tangy allure of <b>raspberry ice cream</b>, where tartness intertwines with creamy delight, creating a harmonious balance of flavors that tantalize your taste buds. Its smooth texture and vibrant raspberry notes offer
+                        a refreshing and delightful experience.</p>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div class="btn-group ">
+                            <button onclick="alert('The Price of Raspberry Ice Cream is €4.5')" type=" button " class="btn btn-sm btn-outline-secondary ">Price</button>
+                            <a href="order" class="btn btn-sm btn-outline-secondary">Order</a>
+                        </div>
+                        <small class="text-muted ">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .image {
+        height: 500px;
+        /* Set the desired height */
+        width: 100px;
+        /* Set the desired width */
+        object-fit: cover;
+        /* Maintain aspect ratio and crop if necessary */
+    }
+</style>
+{% endblock body %}

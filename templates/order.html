@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% block title %} Contact {% endblock title %} {% block body %}
+
+
+
+<div class="container my-3">
+
+    <h1 style="text-align:center">Your Order</h1>
+
+    <form method="post" action="/order">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name here" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone_number" class="form-label">Phone number</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter you phone number here" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="address" class="form-label">Home address</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Enter your home address here" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="quantity">How many Ice Creams you want:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        </div>
+
+        <div class="mb-3">
+            <button onclick="showPopup()" class="btn btn-primary" type="submit">Checkout</button>
+            <div id="popupMessage" class="popup">
+                <p>Your order is done!</p>
+                <button onclick="hidePopup()">Close</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<script>
+    function showPopup() {
+        document.getElementById('popupMessage').style.display = 'block';
+    }
+
+    function hidePopup() {
+        document.getElementById('popupMessage').style.display = 'none';
+    }
+</script>
+
+
+
+<style>
+    .popup {
+        display: none;
+        /* Hide the popup by default */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #c4c4c4;
+        padding: 20px;
+        border: 1px solid #000000;
+    }
+</style>
+
+
+{% endblock body %}
